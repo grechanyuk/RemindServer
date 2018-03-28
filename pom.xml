@@ -7,24 +7,47 @@
     <groupId>com.developer.eg.remind.server</groupId>
     <artifactId>com.developer.eg.remind.server</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <spring.version>5.0.4.RELEASE</spring.version>
+        <javax.servlet-api.version>4.0.0</javax.servlet-api.version>
+        <spring-data-jpa.version>2.0.5.RELEASE</spring-data-jpa.version>
+        <hibernate-entitymanager.version>5.2.15.Final</hibernate-entitymanager.version>
+        <postgresql.version>42.2.2</postgresql.version>
+    </properties>
     <packaging>war</packaging>
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>5.0.4.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>5.0.4.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>4.0.0</version>
+            <version>${javax.servlet-api.version}</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>${spring-data-jpa.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${hibernate-entitymanager.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgresql.version}</version>
+        </dependency>
+
     </dependencies>
 
 
