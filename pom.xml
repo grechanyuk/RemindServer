@@ -15,6 +15,7 @@
         <postgresql.version>42.2.2</postgresql.version>
         <commons-dbcp2.version>2.2.0</commons-dbcp2.version>
         <jta.version>1.1</jta.version>
+        <jackson-databind.version>2.9.4</jackson-databind.version>
     </properties>
     <packaging>war</packaging>
     <dependencies>
@@ -23,6 +24,8 @@
             <artifactId>spring-core</artifactId>
             <version>${spring.version}</version>
         </dependency>
+
+        <!-- WEB -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
@@ -34,6 +37,8 @@
             <version>${javax.servlet-api.version}</version>
             <scope>provided</scope>
         </dependency>
+
+        <!-- Database -->
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
@@ -58,6 +63,13 @@
             <groupId>javax.transaction</groupId>
             <artifactId>jta</artifactId>
             <version>${jta.version}</version>
+        </dependency>
+
+        <!-- JSON Converter -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson-databind.version}</version>
         </dependency>
 
     </dependencies>
